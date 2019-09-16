@@ -1,0 +1,14 @@
+Angular
+1. Important: FormsModule is Required for Two-Way-Binding!
+2. @component decorator: viewEncapsulation(shadowdom)
+3. #ref: known as ocal refrences, available within html template onl
+4. @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef;
+omit   {static: true} if angular < 8
+5. ngcontent: to put the content betn custom tag <app-cust> something </app-cust>
+now in app-cust html template wherever we put <ngcontent></ngcontent> something will be rendered
+
+6. Behind the scene of *ngIf on div => <ng-template [ng-if]="condition" > 
+
+7. <router-outlet> is a directive not a component
+
+8.insted of route.snapshot use route.params.subscribe as snapshot will not recive data from url if we are on the same page
